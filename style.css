@@ -1,0 +1,161 @@
+
+/* start of style for nav bar*/
+
+@media (min-width: 992px) {   
+
+	nav.navbar a{
+		text-decoration: none;
+		text-transform: uppercase;
+		/*font-family: prepareFont2d; */
+		letter-spacing: 2px;
+	}
+
+	nav.navbar a.active, nav.navbar a:hover{
+		border-bottom: 2.5px solid #fc5c9c;
+		/*background-color: #ececec;*/
+	}
+
+
+	nav.navbar ul li{
+		padding: 0px 5px;
+	}
+
+	nav.navbar ul li a,
+	nav.navbar ul li a:after,
+	nav.navbar ul li a:before {
+		transition: all .9s;
+	}
+
+}
+
+@media (max-width: 992px) { 
+
+	nav.navbar a{
+		text-decoration: none;
+		text-transform: uppercase;
+		/*font-family: prepareFont2d; */
+		letter-spacing: 2px;
+	}
+
+	nav.navbar a.active, nav.navbar a:hover{
+		border-bottom: 2.5px solid #fc5c9c;
+		border-bottom-width: 3px;
+		border-radius: 7px;
+	}
+
+
+	nav.navbar ul li{
+		padding: 0px 5px;
+	}
+
+	nav.navbar ul li a,
+	nav.navbar ul li a:after,
+	nav.navbar ul li a:before {
+		transition: all .9s;
+	}
+
+}
+
+/*******************************************/
+
+	.custom-toggler {
+	    background-color: #fc5c9c;
+	}
+
+	.custom-toggler .navbar-toggler-icon {
+	  background-color: #fc5c9c;
+	}
+
+/********* End of style for nav bar *******/
+
+/*****************************************************************************************************/
+
+/* Start Banner */
+
+/* for control icon of banner */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 60px;
+    width: 60px;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background-color: #fc5c9c;
+    background-size: 55%, 55%;
+    border-radius: 42%;
+    /*border: 1px solid #fc5c9c;*/
+    border-color: rgba(0, 0, 0, 0.2);
+        /*outline: red;*/
+}
+
+/****** Zoom animation for banner ******/
+
+#cusCarousel .carousel-inner .carousel-item img{
+	height: 100vh;
+	width: 100%;
+}
+
+.carousel-inner .carousel-item > img{
+	-webkit-animation:thing 20s;
+	-o-animation:thing 20s;
+	animation:thing 20s;
+}
+
+@keyframes thing{
+	from{
+		transform: scale(1, 1);
+	}
+	to{
+		transform: scale(1.5, 1.5);
+	}
+}
+
+/****** ****** ****** ******/
+
+
+.carousel-inner .carousel-item img{
+	/*width: 80%;*/
+	height: 500px;
+}
+
+
+/* End Banner */
+
+/*****************************************************************************************************/
+
+
+/************ Our Foucs ************/
+
+
+.somesection {
+	margin-top:50px!important;
+
+}
+
+@media (min-width: 992px){
+	.overlay-text {
+		background:#f7f7f7;
+	    margin-left: -100px;
+	    margin-top: 30px;
+	    max-height: 370px;
+	    padding: 30px;
+	    border-radius: 20px;
+	}
+}
+
+@media (max-width: 992px){
+	.overlay-text {
+		text-align: justify;
+		background:#f7f7f7;
+/*	    margin-left: -100px;
+	    margin-top: 30px;
+	    max-height: 370px;
+	    padding: 30px;*/
+	    border-radius: 20px;
+	}
+
+	.overlay-text h4 {
+		text-align: center;
+		text-decoration: underline;
+		padding: 20px;
+	}
+}
+
+/*****************************************************************************************************/
