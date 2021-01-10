@@ -1,0 +1,21 @@
+@font-face
+{
+	font-family: dancing;
+	src:url(font/DancingScript/DancingScript-Regular.ttf);
+}
+@font-face
+{
+	font-family: langar;
+	src:url(font/Langar-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: noto;
+	src:url(font/NotoSerif/NotoSerif-Regular.ttf);
+}
+@font-face
+{
+	font-family: pacifico;
+	src:url(fonts/Pacifico/Pacifico-Regular.ttf);
+}
