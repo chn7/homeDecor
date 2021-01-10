@@ -1,5 +1,11 @@
+
+.team-banner{
+  background-image: url(scn-img/home3.jpg);
+}
 #box{
 	position: relative;
+  width: 100%;
+  height: 334px;
 }
 
 .head-txt{
