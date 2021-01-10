@@ -72,8 +72,8 @@
 .inner-img{
 	border-radius: 50%;
 	background-clip: border-box;
-  max-width: 80px;
-  height: auto;
+  width: 80px;
+  height:80px;
     
 }
 #double-q{
@@ -124,7 +124,7 @@ div#review {
 }
 
 #feedbackid{
-	background-color:/*#FAFAD2*/wheat;
+	background-color:/*#FAFAD2*/#e8e2dc;
 }
 
 .team-img {
@@ -162,7 +162,7 @@ div#review {
 }
 /*----------------------footer---------------------------*/
 .foot{
-    background-color: wheat;
+    background-color: #C7BEB5;
     padding: 35px 0 25px;
     font: 400 10px "Brandson Grotesque", noto;
     color: black;
