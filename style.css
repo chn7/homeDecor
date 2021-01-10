@@ -15,7 +15,7 @@
 	}
 
 	nav.navbar a.active, nav.navbar a:hover{
-		border-bottom: 2.5px solid #fc5c9c;
+		border-bottom: 2.5px solid #b19777;
 		/*background-color: #ececec;*/
 	}
 
@@ -47,7 +47,7 @@
 	}
 
 	nav.navbar a.active, nav.navbar a:hover{
-		border-bottom: 2.5px solid #fc5c9c;
+		border-bottom: 2.5px solid #b19777;
 		border-bottom-width: 3px;
 		border-radius: 7px;
 	}
@@ -73,11 +73,11 @@
 /*******************************************/
 
 	.custom-toggler {
-	    background-color: #fc5c9c;
+	    background-color: #f3f3f3;
 	}
 
 	.custom-toggler .navbar-toggler-icon {
-	  background-color: #fc5c9c;
+	  background-color: #f3f3f3;
 	}
 
 /********* End of style for nav bar *******/
@@ -347,13 +347,13 @@
 
 /*********************************Pricing Cards*******************************/
 
-.pd{
+.ppdd{
 	padding: 90px 50px 50px 50px;
 }
 
 .card-bg{
   background-image: url(images/card-bg.jpg);
-  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
 }
 
 /*************************************End*************************************/
@@ -361,7 +361,7 @@
 
 /***********************Footer***********************/
 .foot{
-    background-color: wheat;
+    background-color: #C7BEB5;
     padding: 35px 0 25px;
     font: 400 10px "Brandson Grotesque", noto;
     color: black;
