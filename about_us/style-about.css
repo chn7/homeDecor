@@ -58,8 +58,7 @@
 	}
 	#subscribe{
 		display: none;
-	}
-  
+	}  
 }
 
 .inner-img{
@@ -120,11 +119,6 @@ div#review {
 	background-color:/*#FAFAD2*/wheat;
 }
 
-/*.team-img{
-  width: 230px;
-  height: 256px;
-}*/
-
 .team-img {
     margin: 0 auto;
     -webkit-transition: all 0.3s ease;
@@ -147,7 +141,6 @@ div#review {
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     object-fit: cover;
-
 }
 
 .team-img:hover{
@@ -158,4 +151,33 @@ div#review {
   transition: all 0.5s ease;
   overflow: hidden;
   padding: 5px;
+}
+/*----------------------footer---------------------------*/
+.foot{
+    background-color: wheat;
+    padding: 35px 0 25px;
+    font: 400 10px "Brandson Grotesque", noto;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+#brandimg{
+  width: 150px;
+  height:150px;
+  margin-top: -15px;
+  margin-left: 50px;
+  position: absolute;
+}
+.foot-icon{
+  width: 30px;
+  height: 30px;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.vl {
+  border-left: 1px solid grey;
+  height: 100px;
+  position: absolute;
+  top: 0;
 }
