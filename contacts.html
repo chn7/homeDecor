@@ -8,14 +8,25 @@
 	 integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
 	 crossorigin="anonymous"/>
 	<style type="text/css">
-		.contact-bg{
-			background-image: url(images/bg.jpg);
-			background-attachment: fixed;
-			height: 334px;
+		.team-banner{
+		  background-image: url(about-us/scn-img/team-bg.jpg);
+		  background-attachment: fixed;
+		  background-position: center;
 		}
-		.img-cize{
-			width: 437px;
-			height: 514px;
+		#box{
+			position: relative;
+		  width: 100%;
+		  height: 334px;
+		}
+		.head-txt{
+			position: absolute;
+			left: 3%;
+			right: 5%;
+			top: 10%;
+			letter-spacing: 1px;
+		}
+		.i-color{
+			color: #B19777;
 		}
 	</style>
 </head>
@@ -58,35 +69,46 @@
 	</nav>
 
 	<!-- Banner -->
-	<div class="container-fluid contact-bg text-center text-info">
-		<div class="">
-    		<h1 class="h1">Contact Us</h1>
-    		<h6> Home&nbsp;|&nbsp;Contant Us </h6>
-	    </div>
+	<div class="text-center text-light team-banner" id="box">
+	<!-- <img src="scn-img/home3.jpg" class="img-fluid w-100 shadow">  -->
+
+	<div class="head-txt">
+		<h1 style="font-family: font2">Contact Us</h1>
+		<div class="navbar navbar-expand">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="" class="nav-link text-light" >Home |</a></li>
+
+				<li class="nav-item "><a href="" class="nav-link text-light pl-1">Team</a></li>
+			</ul>
+		</div>
+
 	</div>
+</div>
 
 	<!-- Address Table -->
 	<div class="container my-5 py-5">
 		<div class="row text-center">
-			<div class="col">
-				<span><i class="fas fa-map-marker-alt fa-2x"></i></span>
-				<h3>Location</h3> 
-				<p>29 Nicolas str, New York, 987597-50</p>
+			<div class="col px-4">
+				<div class="">
+					<p class="mb-3"><i class="fas fa-map-marker-alt fa-2x i-color"></i></p>
+					<h3 class="mb-3">Location</h3> 
+					<p>29 Nicolas str, New York, 987</p>
+				</div>
 			</div>
-			<div class="col">
-				<span><i class="fas fa-phone-volume fa-2x"></i></span>
-				<h3>Phone</h3> 
-				<p>29 Nicolas str, New York, 987597-50</p>
+			<div class="col px-4">
+				<p class="mb-3"><i class="fas fa-phone-volume fa-2x i-color"></i></p>
+				<h3 class="mb-3">Phone</h3> 
+				<p>0(800) 890-90-609</p>
 			</div>
-			<div class="col">
-				<span><i class="fas fa-envelope-open-text fa-2x"></i></span>
-				<h3>Email</h3> 
-				<p>29 Nicolas str, New York, 987597-50</p>
+			<div class="col px-4">
+				<p class="mb-3"><i class="fas fa-envelope-open-text fa-2x i-color"></i></p>
+				<h3 class="mb-3">Email</h3> 
+				<p>chunhtetnaing@gmail.com</p>
 			</div>
-			<div class="col">
-				<span><i class="fas fa-business-time fa-2x"></i></span>
-				<h3>Working Hours</h3> 
-				<p>29 Nicolas str, New York, 987597-50</p>
+			<div class="col px-4">
+				<p class="mb-3"><i class="fas fa-business-time fa-2x i-color"></i></p>
+				<h3 class="mb-3">Working Hours</h3> 
+				<p>Monday - Friday</p>
 			</div>
 		</div>
 	</div>

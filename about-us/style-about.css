@@ -1,6 +1,8 @@
 
 .team-banner{
-  background-image: url(scn-img/home3.jpg);
+  background-image: url(scn-img/team-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
 }
 #box{
 	position: relative;
