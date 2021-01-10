@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
@@ -11,18 +11,27 @@
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light sticky-top "  style="background-color: #fccde2;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
   		<div class="container-fluid">
-
+  			<a href="#" class="navbar-brand ms-4">
+  				<img src="images/company-logo.png" class="logo-size img-fluid">
+  			</a>
     		<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      		 	<span class="navbar-toggler-icon"></span>
     		</button>
 
     		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-      			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 		    		<li class="nav-item">
-		    			<a class="nav-link active" href="#">Home</a>
+		    			<a class="nav-link" href="index.html">Home</a>
 		    		</li>
+		    		<li class="nav-item dropdown">
+					    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+					    <ul class="dropdown-menu">
+					      <li><a class="dropdown-item" href="about-us/testimonials.html">Testimonials</a></li>
+					      <li><a class="dropdown-item" href="about-us/team.html">Our Team</a></li>
+					    </ul>
+					</li>
         			<li class="nav-item">
           				<a class="nav-link" aria-current="page" href="#">Portfolio</a>
         			</li>
@@ -30,7 +39,7 @@
           				<a class="nav-link" href="#">Blog</a>
         			</li>
         			<li class="nav-item">
-          				<a class="nav-link" href="#">Contact</a>
+          				<a class="nav-link" href="contacts.html">Contacts</a>
         			</li>
       			</ul>
 
@@ -39,49 +48,217 @@
 	</nav>
 
 	<!-- Banner -->
-	<div class="">
-		<div id="cusCarousel" class="carousel slide" data-bs-ride="carousel" >
-			  <ol class="carousel-indicators">
-				    <li data-bs-target="#cusCarousel" data-bs-slide-to="0" class="active"></li>
-				    <li data-bs-target="#cusCarousel" data-bs-slide-to="1"></li>
-				    <li data-bs-target="#cusCarousel" data-bs-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    	<div class="carousel-item active">
-					      <img src="images/banner1a.jpg" class=" img-fluid" alt="...">
-					      <div class="carousel-caption">
-					      		<h2>Slide One</h2>
-					      </div>
-			    	</div>
-			    	<div class="carousel-item">
-					      <img src="images/banner2a.jpg" class=" img-fluid" alt="...">
-					      <div class="carousel-caption">
-					      		<h2>Slide Two</h2>
-					      </div>
-			    	</div>
-			    	<div class="carousel-item">
-					      <img src="images/banner3a.jpg" class=" img-fluid" alt="...">
-					      <div class="carousel-caption">
-					      		<h2>Slide Three</h2>
-					      </div>
-			    	</div>
-			  </div>
-			  <a class="carousel-control-prev" href="#cusCarousel" role="button" data-bs-slide="prev">
-				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    <span class="visually-hidden">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#cusCarousel" role="button" data-bs-slide="next">
-				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    <span class="visually-hidden">Next</span>
-			  </a>
+	<div class="carousel slide" data-bs-ride="carousel" id="Carousel">
+		<ol class="carousel-indicators">
+		    <li data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></li>
+		    <li data-bs-target="#Carousel" data-bs-slide-to="1"></li>
+		    <li data-bs-target="#Carousel" data-bs-slide-to="2"></li>
+	  	</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/banner1a.jpg" class="img-fluid w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="images/banner2a.jpg" class="img-fluid w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="images/banner3a.jpg" class="img-fluid w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="images/banner4a.jpg" class="img-fluid w-100">
+			</div>
+		</div>
+		<a href="#Carousel" class="carousel-control-prev" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a href="#Carousel" class="carousel-control-next" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+
+	<!-- Section 1 - Interior Solutions -->
+	<div class="container-fluid">
+		<div class="container">
+		<div class="row my-5">
+			<div class="col-md-12 col-lg-6">
+				<header class="text-center text-md-start">
+					<h1 class="lh-sm fade-in">
+						<span class="clr-brown">Creative Solution</span><br>
+						by Professional Designers
+					</h1>
+					<p class="my-4">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</p>
+				</header>
+				<div class="row mb-4">
+					<div class="col-4">
+						<img src="images/solution-2.jpg" class="img-fluid bounce-in st">
+					</div>
+					<div class="col-4">
+						<img src="images/solution-2.jpg" class="img-fluid bounce-in nd">
+					</div>
+					<div class="col-4">
+						<img src="images/solution-3.jpg" class="img-fluid bounce-in rd">
+					</div>
+				</div>
+				<div class="text-center text-md-start">
+					<button class="btn btn-outline-info mt-4">Button</button>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-6 bg-image">
+				<img src="images/home-decor-1.jpg" class="img-fluid pic ps-4">
+			</div>
+		</div>
 		</div>
 	</div>
 
-	<!-- Our Foucs -->
-	<div class="container somesection">
+	<!-- Section 2 - Decortion Category -->
+	<div class="container-fluid bg-gray">
+		<div class="container pt-5">
+			<div class="row my-4">
+				<div class="col-12 col-md-12 col-lg-3 mt-4">
+					<div>
+						<header class="text-center text-lg-start">
+							<div class="fade-in">
+								<h1>
+								<span class="clr-brown">Modern ideas</span> <br>
+								for home
+							</h1>
+							</div>
+							<div class="txt-wrap">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</header>
+						<div class="btn-wrap text-center text-lg-start">
+							<button>Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3 mt-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3 mt-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3 mt-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 my-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 my-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 my-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 my-4">
+					<div class="maincontainer">
+						<div class="thecard">
+							<div class="thefront pt-5">
+								<span><img src="images/bed.svg" class="icon-size"></span>
+								<h5>Bedrooms</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+							<div class="theback pt-5">
+								<span><img src="images/kitchen.svg" class="icon-size clr-brown"></span>
+								<h5>Kitchens</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- Section 3 -Our Foucs --->
+	<div class="container-fluid somesection">
   		<div class="row">  
-			<div class="col-lg-8 col-md-12 w-lg-75">
-				<img src="images/banner2a.jpg" class="img-fluid" style="border-radius: 5px;">
+			<div class="col-lg-8 col-md-12 w-lg-75 p-0">
+				<img src="images/banner2a.jpg" class="img-fluid">
 			</div>
 			<div class="col-lg-4 shadow-lg overlay-text">
 	    		<h4>Our Focus</h4>
@@ -92,9 +269,182 @@
 	    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     		</div>
+    	</div>
     </div>	
+    <div class="container-fluid somesection">
+  		<div class="row">  
+			<div class="col-lg-8 col-md-12 w-lg-75 p-0">
+				<img src="images/banner2a.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 shadow-lg overlay-text">
+	    		<h4>Our Focus</h4>
+	    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		</div>
+    	</div>
+    </div>
 
 
+    <!-- Section 4 - Pricing Plans -->
+    <div class="container-fluid card-bg mt-5">
+		<div class="container">
+			<div class="row py-5">
+				<div class="col">
+					<div class="card text-center w-auto">
+							<div class="card-body pd">
+								<div class="mb-4">
+									<h5 class="card-subtitle">Planning</h5>
+									<h2 class="card-title">$169</h2>
+								</div>
+								<ul class="list-group list-group-flush mb-4">
+								    <li class="list-group-item">Cras justo odio</li>
+								    <li class="list-group-item">Dapibus ac facilisis in</li>
+								    <li class="list-group-item">Vestibulum at eros</li>
+								    <li class="list-group-item">Vestibulum at eros</li>
+							    </ul>
+						    	<button type="button" class="btn btn-outline-secondary">Send</button>
+							</div>
+						</div>
+				</div>
+				<div class="col">
+					<div class="card text-center w-auto">
+						<div class="card-body pd">
+							<div class="mb-4">
+								<h5 class="card-subtitle">Single Project</h5>
+								<h2 class="card-title">$799</h2>
+							</div>
+							<ul class="list-group list-group-flush mb-4">
+							    <li class="list-group-item">Cras justo odio</li>
+							    <li class="list-group-item">Dapibus ac facilisis in</li>
+							    <li class="list-group-item">Vestibulum at eros</li>
+							    <li class="list-group-item">Vestibulum at eros</li>
+						    </ul>
+					    	<button type="button" class="btn btn-outline-secondary">Send</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card text-center w-auto">
+						<div class="card-body pd">
+							<div class="mb-4">
+								<h5 class="card-subtitle">Smart Home</h5>
+								<h2 class="card-title">$2500</h2>
+							</div>
+							<ul class="list-group list-group-flush mb-4">
+							    <li class="list-group-item">Cras justo odio</li>
+							    <li class="list-group-item">Dapibus ac facilisis in</li>
+							    <li class="list-group-item">Vestibulum at eros</li>
+							    <li class="list-group-item">Vestibulum at eros</li>
+						    </ul>
+					    	<button type="button" class="btn btn-outline-secondary">Send</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card text-center w-auto">
+						<div class="card-body pd">
+							<div class="mb-4">
+								<h5 class="card-subtitle">Commerial</h5>
+								<h2 class="card-title">$1250</h2>
+							</div>
+							<ul class="list-group list-group-flush mb-4">
+							    <li class="list-group-item">Cras justo odio</li>
+							    <li class="list-group-item">Dapibus ac facilisis in</li>
+							    <li class="list-group-item">Vestibulum at eros</li>
+							    <li class="list-group-item">Vestibulum at eros</li>
+						    </ul>
+					    	<button type="button" class="btn btn-outline-secondary">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+    
+
+	
+<footer class="container-fluid mt-5 foot">
+		<div class="row text-left mx-5 px-3">
+
+			<div class="col-3 d-lg-block d-none">
+				<div class="img-icon">
+				<img src="images/logo1.png" id="brandimg" class="mr-md-5">
+				<div class="row px-3">
+					<div class="col-3">
+						<img src="images/pin-icon.png"class="foot-icon">
+					</div>
+					<div class="col-3">
+						<img src="images/ig-icon.png"class="foot-icon">
+					</div>
+					<div class="col-3">
+						<img src="images/twi-icon.png"class="foot-icon">
+					</div>
+					<div class="col-3">
+						<img src="images/fb-icon.png"class="foot-icon">
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="col-3 my-3 d-lg-block d-none">
+				<div class="navbar vl">
+					<ul class="navbar-nav px-3">
+						<li class="nav-item"><a href="" class="nav-link text-secondary" >Home</a></li>
+						<li class="nav-item "><a href="" class="nav-link text-secondary">Team</a></li>
+						<li class="nav-item "><a href="" class="nav-link text-secondary">Testimonials</a></li>
+					</ul>
+				</div>
+			</div>	
+
+			<div class="col-3 my-3 d-lg-block d-none">
+				<div class="navbar vl">
+					<ul class="navbar-nav px-3">
+						<li class="nav-item"><a href="" class="nav-link text-secondary" >portfolio</a></li>
+						<li class="nav-item "><a href="" class="nav-link text-secondary">articles</a></li>
+						<li class="nav-item "><a href="" class="nav-link text-secondary">contact us</a></li>
+					</ul>
+				</div>
+			</div>	
+
+			<div class="col-3 my-3 d-lg-block d-none">
+				<div class="navbar vl">
+					<ul class="navbar-nav px-3">
+						<li class="nav-item"><a href="" class="nav-link text-secondary" >subscribe</a></li>
+						<li class="nav-item">
+							<div class="input-group my-2 mr-3">
+								 <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+								 <div class="input-group-append">
+								 	<button class="btn btn-outline-secondary" type="button">send</button>
+								 </div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="container ">
+				<div class="d-md d-lg-none">
+					<p class="text-secondary text-center">Subscribe</p>
+					<br>
+					<br>
+					<div class="input-group mb-2 mr-3">
+						 <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+						 <div class="input-group-append">
+						 	<button class="btn btn-outline-secondary" type="button">send</button>
+						 </div>
+					</div>
+				</div>
+			</div>
+			<div class="my-3 text-center text-secondary">copyright home interior 2020, terms & privacy policy</div>	
+		</div>
+</footer>
 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

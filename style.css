@@ -1,6 +1,7 @@
 
 /* start of style for nav bar*/
 
+
 @media (min-width: 992px) {   
 
 	nav.navbar a{
@@ -25,6 +26,11 @@
 	nav.navbar ul li a:before {
 		transition: all .9s;
 	}
+	.logo-size{
+	width: 125px;
+	height: 75px;
+	object-fit: cover;
+}
 	
 }
 
@@ -54,6 +60,11 @@
 		transition: all .9s;
 	}
 
+	.logo-size{
+	width: 100px;
+	height: 100px;
+}
+
 }
 
 /*******************************************/
@@ -72,25 +83,10 @@
 
 /* Start Banner */
 
-/* for control icon of banner */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 60px;
-    width: 60px;
-    /*background-color: rgba(0, 0, 0, 0.2);*/
-    background-color: #fc5c9c;
-    background-size: 55%, 55%;
-    border-radius: 42%;
-    /*border: 1px solid #fc5c9c;*/
-    border-color: rgba(0, 0, 0, 0.2);
-        /*outline: red;*/
-}
 
 /****** Zoom animation for banner ******/
 
-#cusCarousel .carousel-inner .carousel-item img{
-	height: 100vh;
-	width: 100%;
-}
+
 
 .carousel-inner .carousel-item > img{
 	-webkit-animation:thing 20s;
@@ -145,6 +141,159 @@
 
 /*****************************************************************************************************/
 
+/********************Section 1 - Interior Solutions****************/
+.pic{
+	width: 494px;
+	height: 640px;
+}
+
+.bg-image{
+	background-image: url(images/dots-pattern.png);
+	background-size: 600px 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*Text Fade-In Effect*/
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+/*End Text Fade-In Effect*/
+
+.bounce-in{
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.st{
+	animation-delay: 500ms;
+}
+.nd{
+	animation-delay: 700ms;
+}
+.rd{
+	animation-delay: 1000ms;
+}
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+
+
+
+/*************************Section 1 End*******************************/
+
+/*******************Section 2 -Interior Category********************/
+
+.bg-gray{
+	background-color: #F3F3F3;
+}
+
+.icon-size{
+	width: 100px;
+	height: auto;
+}
+
+.maincontainer{
+      position: relative;
+      width: 261px;
+      height: 316px;
+    }
+    .thecard{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: all 1000ms ease;
+    }
+    .thecard:hover{
+      transform: rotateY(180deg);
+    }
+    .thefront{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background: #ffc728;
+      color: #333;
+      text-align: center;
+    }
+    .theback{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background: green;
+      color: #333;
+      text-align: center;
+      transform: rotateY(180deg);
+    }
+/************************Section 2 End***************************/
 
 /************ Our Foucs ************/
 
@@ -160,7 +309,7 @@
 	    margin-top: 30px;
 	    max-height: 370px;
 	    padding: 30px;
-	    border-radius: 5px;
+	    /*border-radius: 5px;*/
 	}
 }
 
@@ -172,7 +321,7 @@
 	    margin-top: 30px;
 	    max-height: 370px;
 	    padding: 30px;*/
-	    border-radius: 20px;
+	    /*border-radius: 20px;*/
 	}
 
 	.overlay-text h4 {
@@ -186,3 +335,45 @@
 
 /*****************************************************************************************************/
 
+/*********************************Pricing Cards*******************************/
+
+.pd{
+	padding: 90px 50px 50px 50px;
+}
+
+.card-bg{
+  background-image: url(images/card-bg.jpg);
+  /*background-repeat: no-repeat;*/
+}
+
+/*************************************End*************************************/
+
+
+/***********************Footer***********************/
+.foot{
+    background-color: wheat;
+    padding: 35px 0 25px;
+    font: 400 10px "Brandson Grotesque", noto;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+#brandimg{
+  width: 150px;
+  height:150px;
+  margin-top: -15px;
+  margin-left: 50px;
+  position: absolute;
+}
+.foot-icon{
+  width: 30px;
+  height: 30px;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.vl {
+  border-left: 1px solid grey;
+  height: 100px;
+  position: absolute;
+}
