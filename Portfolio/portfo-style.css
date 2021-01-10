@@ -1,0 +1,316 @@
+
+/* start of style for nav bar*/
+
+@media (min-width: 992px) {   
+
+	nav.navbar a{
+		text-decoration: none;
+		text-transform: uppercase;
+		/*font-family: prepareFont2d; */
+		letter-spacing: 2px;
+	}
+
+	nav.navbar a.active, nav.navbar a:hover{
+		border-bottom: 2.5px solid #ffd717;
+		/*background-color: #ececec;*/
+	}
+
+
+	nav.navbar ul li{
+		padding: 0px 5px;
+	}
+
+	nav.navbar ul li a,
+	nav.navbar ul li a:after,
+	nav.navbar ul li a:before {
+		transition: all .9s;
+	}
+
+}
+
+@media (max-width: 992px) { 
+
+	nav.navbar a{
+		text-decoration: none;
+		text-transform: uppercase;
+		/*font-family: prepareFont2d; */
+		letter-spacing: 2px;
+	}
+
+	nav.navbar a.active, nav.navbar a:hover{
+		border-bottom: 2.5px solid #ffd717;
+		border-bottom-width: 3px;
+		border-radius: 7px;
+	}
+
+
+	nav.navbar ul li{
+		padding: 0px 5px;
+	}
+
+	nav.navbar ul li a,
+	nav.navbar ul li a:after,
+	nav.navbar ul li a:before {
+		transition: all .9s;
+	}
+
+}
+
+/*******************************************/
+
+	.custom-toggler {
+	    background-color: #ffd717;
+	}
+
+	.custom-toggler .navbar-toggler-icon {
+	  background-color: #ffd717;
+	}
+
+/********* End of style for nav bar *******/
+
+/*****************************************************************************************************/
+
+/* Start Banner */
+
+/* for control icon of banner */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 60px;
+    width: 60px;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background-color: #fce850;
+    background-size: 55%, 55%;
+    border-radius: 42%;
+    /*border: 1px solid #fc5c9c;*/
+    border-color: rgba(0, 0, 0, 0.2);
+        /*outline: red;*/
+}
+
+/****** Zoom animation for banner ******/
+
+.carousel-inner .carousel-item > img{
+	-webkit-animation:thing 20s;
+	-o-animation:thing 20s;
+	animation:thing 20s;
+}
+
+@keyframes thing{
+	from{
+		transform: scale(1, 1);
+	}
+	to{
+		transform: scale(1.5, 1.5);
+	}
+}
+
+/****** ****** ****** ******/
+
+/* Fixing image size for carousel within banner */
+	
+@media (min-width: 992px){
+	div.carousel-inner div.carousel-item {
+		max-height: 500px;
+	}
+}
+
+
+/* End Banner */
+
+/*****************************************************************************************************/
+
+
+/************ ************/
+
+
+.somesection {
+	margin-top:50px!important;
+
+}
+
+@media (min-width: 1180px){
+
+	.foucspone img{
+		border-radius: 2px;
+	}
+
+	.overlay-text {
+		text-align: justify;
+		background:#f7f7f7;
+	    margin-left: -100px;
+	    margin-top: 68px;
+	    max-height: 365px;
+	    padding: 25px;
+	    border-radius: 2px;
+	}
+
+	.overlay-text h4{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.overlay-text a{
+		margin-top: 25px;
+		padding: 7px 55px;
+		text-align: center;
+
+	}
+}
+
+
+@media screen and (max-width: 1180px) and (min-width: 1100px){
+	.foucspone img{
+		border-radius: 2px;
+	}
+	.overlay-text {
+		text-align: justify;
+		background:#f7f7f7;
+	    margin-left: -60px;
+	    margin-top: 35px;
+	    max-height: 320px;
+	    border-radius: 2px;
+	}
+
+	.overlay-text h4{
+		font-size: 20px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}  
+
+	.overlay-text a{
+		margin-top: 8px;
+		padding: 0 30px;
+		text-align: center;
+		font-size: 13px;
+
+	}
+
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1026px){
+	.foucspone img{
+		border-radius: 2px;
+	}
+	.overlay-text {
+		text-align: justify;
+		background:#f7f7f7;
+	    margin-left: -60px;
+	    margin-top: 35px;
+	    max-height: 320px;
+	    border-radius: 2px;
+	}
+
+	.overlay-text h4{
+		font-size: 20px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}  
+
+	.overlay-text a{
+		margin-top: 8px;
+		padding: 0 30px;
+		text-align: center;
+		font-size: 13px;
+
+	}
+
+}
+
+@media screen and (max-width: 1025px) and (min-width: 770px){
+	.foucspone img{
+		border-radius: 2px;
+	}
+	.overlay-text {
+		text-align: justify;
+		background:#f7f7f7;
+	    margin-left: -60px;
+	    margin-top: 45px;
+	    max-height: 296px;
+	    border-radius: 2px;
+	}
+
+	.overlay-text h4{
+		font-size: 18px;
+		margin-top: 11px;
+		margin-bottom: 16px;
+	}
+
+	.overlay-text p{
+		font-size: 14px;
+
+	}
+
+	.overlay-text a{
+		margin-top: 8px;
+		padding: 5px 20px;
+		text-align: center;
+		font-size: 13px;
+
+	}
+}
+
+
+@media screen and (max-width: 769px) and (min-width: 760px){
+	.overlay-text {
+		margin-top: 20px;
+		text-align: justify;
+		background:#f7f7f7;
+	    padding: 30px;
+	    border-radius: 20px;
+	}
+
+	.overlay-text h4 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.overlay-text a{
+		padding: 5px 228px;
+		text-align: center;
+		font-size: 15px;
+
+	}
+}
+
+@media (max-width: 750px){
+	.overlay-text {
+		text-align: justify;
+		background:#f7f7f7;
+	    padding: 30px;
+	    border-radius: 20px;
+	}
+
+	.overlay-text h4 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.overlay-text a{
+		padding: 5px 85px;
+		text-align: center;
+		font-size: 15px;
+
+	}
+}
+
+@media (max-width: 376px){
+	.overlay-text {
+		margin: 20px 0;
+		text-align: justify;
+		background:#f7f7f7;
+	    padding: 30px;
+	    border-radius: 20px;
+	}
+
+	.overlay-text h4 {
+		text-align: center;
+		padding: 13px;
+	}
+
+	.overlay-text a{
+		padding: 5px 85px;
+		text-align: center;
+		font-size: 10px;
+
+	}
+}
+
+/*****************************************************************************************************/
